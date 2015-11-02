@@ -10,11 +10,11 @@ __pycache__/
 env/
 build/
 develop-eggs/
-dist/
+#dist/ # We need the directory structure
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/ # We need the directory structure
 lib64/
 parts/
 sdist/
