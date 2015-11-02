@@ -3,6 +3,7 @@
 default: clean clean-dist dist zip;
 
 deps:
+	pip install -r requirements.dev.txt
 	pip install -r requirements.txt -t lib/
 
 dist:
@@ -14,7 +15,7 @@ zip: dist
 	cd dist && zip -q -r dist.zip .
 
 clean:
-	rm -rf src/*.pyc
+	find src/ -name \*.pyc -delete
 
 clean-dist:
 	rm -rf dist/*
